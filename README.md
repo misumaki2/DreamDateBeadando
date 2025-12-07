@@ -1,6 +1,6 @@
 Készítő: Horváth Miksa
 
-URL Cím:
+URL Cím: https://misumaki2.github.io/DreamDateBeadando/
 
 Weboldal röviden: Egy randi tervező weboldal aminek a 3 oldalán egy rövid játék van és a negyedik oldalán meg egy form. Ahhoz hogy a form látszódjon, rá kell kattintani az egyik fizetési plan-re.
 
