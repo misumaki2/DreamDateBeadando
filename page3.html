@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Horváth Miksa">
+  <meta name="description" content="Randi Tervező Weboldal">
+  <title>DreamDate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+  <!-- TopBar -->
+  <nav class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <h1 class="logo-title">❤️ DreamDate</h1>
+      </div>
+
+      <div class="nav-actions" role="navigation" aria-label="Fő navigáció">
+        <a class="nav-btn" href="page1.html" >Kezdőlap</a>
+        <a class="nav-btn" href="page2.html" >Helyszínek</a>
+        <a class="nav-btn active" href="page3.html" >Teszt & Tippek</a>
+        <a class="nav-btn" href="page4.html" >Prémium</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fő tartalom -->
+  <main class="container main">
+      <div class="grid-two">
+        <!-- Love Tester -->
+        <div class="panel panel-pink">
+          <h2 class="panel-title">Kémia Ellenőrző 🧪</h2>
+          <p class="panel-sub">Nézd meg, mit mond az algoritmus a választott nevek alapján!</p>
+
+          <div class="love-form">
+            <input id="name1" type="text" placeholder="Te neved" class="input">
+            <input id="name2" type="text" placeholder="Partner neve" class="input">
+            <button id="run-love-test" class="btn-love">Elemzés Futtatása</button>
+          </div>
+
+          <div class="result-area">
+            <div class="heart-container">
+              <div id="heart-fill" class="heart-fill" style="height: 0%"></div>
+              <p id="loveit-text">❤️</p>
+            </div>
+            <div id="result-percentage" class="result-percent">--%</div>
+            <p id="result-message" class="result-message"></p>
+          </div>
+
+          <div class="history">
+            <h4 class="history-title">Legutóbbi mérések:</h4>
+            <ul id="history-list" class="history-list"></ul>
+          </div>
+        </div>
+
+        <!-- Tippek -->
+        <div class="panel panel-blue">
+          <h2 class="panel-title">Randi Kisokos 💡</h2>
+
+          <div class="tips">
+            <div class="tip">
+              <div class="tip-emoji">😊</div>
+              <div>
+                <h4 class="tip-title">Légy önmagad!</h4>
+                <p class="tip-text">A legfontosabb, hogy ne játszd meg magad. Ha nem tetszik valami, mondd el udvariasan.</p>
+              </div>
+            </div>
+
+            <div class="tip">
+              <div class="tip-emoji">📱</div>
+              <div>
+                <h4 class="tip-title">Telefon a zsebben</h4>
+                <p class="tip-text">Tiszteld meg a másikat a figyelmeddel. A telefont csak akkor vedd elő, ha valamit közösen néztek meg.</p>
+              </div>
+            </div>
+
+            <div class="tip">
+              <div class="tip-emoji">🛡️</div>
+              <div>
+                <h4 class="tip-title">Biztonság először</h4>
+                <p class="tip-text">Első randin mindig nyilvános helyen találkozzatok. Szólj valakinek, hova mész.</p>
+              </div>
+            </div>
+
+            <div class="tip">
+              <div class="tip-emoji">💬</div>
+              <div>
+                <h4 class="tip-title">Kérdezz!</h4>
+                <p class="tip-text">Ha kifogytál a témából: "Mi a kedvenc filmed?", "Hova utaznál el legszívesebben?".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 DreamDate App. Minden jog fenntartva.</p>
+    </div>
+  </footer>
+ <script src="./js/script.js"></script>
+</body>
+</html>

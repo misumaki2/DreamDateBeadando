@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Horváth Miksa">
+  <meta name="description" content="Randi Tervező Weboldal">
+  <title>DreamDate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+  <!-- TopBar -->
+  <nav class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <h1 class="logo-title">❤️ DreamDate</h1>
+      </div>
+
+      <div class="nav-actions" role="navigation" aria-label="Fő navigáció">
+        <a class="nav-btn" href="page1.html" >Kezdőlap</a>
+        <a class="nav-btn" href="page2.html" >Helyszínek</a>
+        <a class="nav-btn" href="page3.html" >Teszt & Tippek</a>
+        <a class="nav-btn active" href="page4.html" >Prémium</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fő tartalom -->
+<main class="container main">
+      <div class="center-text">
+        <h2>Prémium Tervező Eszközök</h2>
+        <p>Még több ötlet, kedvezménykuponok és VIP foglalás.</p>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <h3 class="plan-title">Kezdő</h3>
+          <div class="plan-price">Ingyenes</div>
+          <ul class="plan-features">
+            <li>✅ Minden alap helyszín</li>
+            <li>✅ Love Tester használat</li>
+            <li>✅ Randi tippek</li>
+          </ul>
+          <button class="plan-btn">Jelenlegi Csomag</button>
+        </div>
+
+        <div class="plan plan-pro">
+          <div class="ribbon">AJÁNLOTT</div>
+          <h3 class="plan-title">Pro Tervező</h3>
+          <div class="plan-price">1.990 Ft <span class="plan-sub">/ hó</span></div>
+          <ul class="plan-features">
+            <li>✅ Rejtett helyszínek feloldása</li>
+            <li>✅ <strong>Kuponok</strong> (mozi, étterem)</li>
+            <li>✅ Személyre szabott ötletgenerátor</li>
+            <li>✅ Reklámmentesség</li>
+          </ul>
+          <button class="plan-btn">Előfizetés</button>
+        </div>
+
+        <div class="plan">
+          <h3 class="plan-title">Mester</h3>
+          <div class="plan-price">4.990 Ft <span class="plan-sub">/ hó</span></div>
+          <ul class="plan-features">
+            <li>✅ Minden, ami a Pro-ban van</li>
+            <li>✅ Asztalfoglalás asszisztens</li>
+            <li>✅ SOS Virágküldés</li>
+            <li>✅ 24/7 Telefonos segítség</li>
+          </ul>
+          <button class="plan-btn">Kiválaszt</button>
+        </div>
+      </div>
+
+          <!-- Előfizetés űrlap modal -->
+    <div id="subscription-modal">
+        
+        <div class="modal-panel">
+        <h2 id="modal-title" class="modal-title">Előfizetés</h2>
+        <p class="modal-sub">Töltsd ki az űrlapot az előfizetés aktiválásához.</p>
+
+        <form id="subscription-form" class="modal-form">
+            
+
+        <label class="label" for="fullname">Teljes név *</label> 
+        <input type="text" name="fullname" class="input" id="fullname" placeholder="Pl. Kiss Elemér">
+        <div id="error-name" class="error-msg"></div>
+
+        <label class="label" for="email">E-mail cím *</label>
+        <input type="email" name="email" class="input" id="email" placeholder="Pl. abc123@gmail.com">
+        <div id="error-email" class="error-msg"></div>
+
+        <label class="label" for="password">Jelszó (min. 8 karakter) *</label>
+        <input type="password" name="password" class="input" id="password" placeholder="Pl. abcd1234">
+        <div id="error-pass" class="error-msg"></div>
+
+        <label class="label" for="age">Kor (18+)</label>
+        <input type="number" name="age" class="input" id="age"> 
+        <div id="error-age" class="error-msg"></div>
+
+        <label class="label" for="birthdate">Születési dátum</label>
+        <input type="date" name="birthdate" class="input" id="birthdate">
+
+        <label class="label" for="terms"> Feliratkozom a heti hírlevélre *
+            <input type="checkbox" name="terms" id="terms"/>    
+        </label>
+        <div id="error-terms" class="error-msg"></div>
+
+
+        <label class="label" for="gender">Nem:</label>
+        <select class="input" id="gender" name="gender">
+            <option value="">-- Válassz egyet --</option>
+            <option value="male">Férfi</option>
+            <option value="female">Nő</option>
+            <option value="other">Egyéb</option>
+        </select>
+
+            <button type="submit" class="plan-btn-block">Előfizetés megerősítése</button>
+        </form>
+        </div>
+    </div>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 DreamDate App. Minden jog fenntartva.</p>
+    </div>
+  </footer>
+
+
+  <!-- Script -->
+ <script src="./js/script.js"></script>
+</body>
+</html>
